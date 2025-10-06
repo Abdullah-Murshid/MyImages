@@ -1,57 +1,66 @@
-# 🎞️ MyImages – Online Photo Printing System
+# 🖼️ MyImages  
+### Online Photo Printing System (ASP.NET MVC)
 
-MyImages is a full-featured **Online Photo Printing System** built with **ASP.NET MVC (C#)**.  
-It allows users to upload JPEG photos, select print sizes, choose payment methods, and manage their orders online — while the admin can manage pricing, orders, and user activities.
+MyImages is a web-based platform that allows users to upload, customize, and order printed photos online.  
+It’s built using **ASP.NET MVC**, **Entity Framework**, and **SQL Server** — featuring both **user** and **admin** panels.
 
 ---
 
 ## 🚀 Features
 
-### 🧑‍💻 User Side
-- User Registration and Login with session management  
-- Upload JPEG photos (multiple uploads supported)  
-- Select print sizes and quantities  
-- Automatic price calculation from the database  
-- Choose payment method:
-  - 💳 Credit Card (encrypted)
-  - 🏦 Pay at Branch  
-- Enter shipping address  
+### 👤 User Features
+- Register, Login, and Manage Profile  
+- Upload JPEG photos  
+- Select print size and quantity  
+- Automatic price calculation  
+- Secure payment via **credit card encryption** or **branch payment**  
+- Shipping address management  
 - View order history and status  
-- Edit profile, change password, or delete account  
 
-### 🛠️ Admin Side
-- Secure admin login  
-- Manage users, orders, and pricing  
-- Update print size rates  
-- View, approve, or reject orders  
-- Manage completed and pending orders  
+### 🛠️ Admin Features
+- Admin registration and login  
+- Manage photo sizes and prices  
+- View and process customer orders  
+- Update order statuses  
+- Manage users  
 
 ---
 
-## 🧩 Technologies Used
+## 🧱 Tech Stack
 
-| Category | Tools / Frameworks |
-|-----------|--------------------|
-| Backend  | ASP.NET MVC (C#), Entity Framework |
-| Frontend | HTML5, CSS3, Bootstrap, jQuery |
+| Layer | Technology |
+|--------|-------------|
+| Frontend | HTML5, CSS3, Bootstrap, JavaScript, jQuery |
+| Backend | ASP.NET MVC (C#), Entity Framework |
 | Database | SQL Server |
-| Security | Credit Card Encryption, Session Management |
-| IDE      | Visual Studio 2022 |
+| Encryption | AES for credit card data |
+| Authentication | Session-based login for users and admins |
 
 ---
 
-## 🗂️ Project Structure
+## ⚙️ Project Structure
 
-MyImages/
-│
-├── .vs/ # Visual Studio config and cache files
-├── e-project/ # Main ASP.NET MVC web application folder
-│ ├── Controllers/ # Contains AdminsController, UsersController, PhotoOrdersController, etc.
-│ ├── Models/ # Contains User, Order, PhotoOrderItem, Admin models
-│ ├── Views/ # Razor views (.cshtml files)
-│ ├── Content/ # CSS, Bootstrap files, and static resources
-│ ├── Scripts/ # jQuery and custom JS scripts
-│ └── web.config # App configuration file
-│
-└── e-project.sln # Visual Studio Solution file
+Controllers/
+│ AdminsController.cs
+│ UsersController.cs
+│ PhotoOrdersController.cs
+│ HomeController.cs
+Models/
+│ User.cs
+│ Admin.cs
+│ Order.cs
+│ PhotoOrderItem.cs
+Views/
+│ Admins/
+│ Users/
+│ PhotoOrders/
+│ Home/
+
+---
+
+## 💾 Setup Instructions
+
+1. Clone the repository  
+   ```bash
+   git clone https://github.com/<your-username>/MyImages.git
 
